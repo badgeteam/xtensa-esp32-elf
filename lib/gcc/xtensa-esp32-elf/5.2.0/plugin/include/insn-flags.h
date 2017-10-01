@@ -80,7 +80,7 @@
 #define HAVE_call_internal 1
 #define HAVE_call_value_internal 1
 #define HAVE_entry 1
-#define HAVE_return ((TARGET_WINDOWED_ABI || !xtensa_current_frame_size) && reload_completed)
+#define HAVE_return (xtensa_use_return_instruction_p ())
 #define HAVE_nop 1
 #define HAVE_eh_set_a0_windowed 1
 #define HAVE_eh_set_a0_call0 1

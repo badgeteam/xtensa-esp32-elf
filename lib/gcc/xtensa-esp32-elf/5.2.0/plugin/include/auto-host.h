@@ -15,13 +15,13 @@
 
 /* Define to the assembler option to enable compressed debug sections. */
 #ifndef USED_FOR_TARGET
-#define AS_COMPRESS_DEBUG_OPTION ""
+#define AS_COMPRESS_DEBUG_OPTION "--compress-debug-sections"
 #endif
 
 
 /* Define to the assembler option to disable compressed debug sections. */
 #ifndef USED_FOR_TARGET
-#define AS_NO_COMPRESS_DEBUG_OPTION ""
+#define AS_NO_COMPRESS_DEBUG_OPTION "--nocompress-debug-sections"
 #endif
 
 
@@ -269,7 +269,7 @@
 /* Define to the level of your assembler's compressed debug section support.
    */
 #ifndef USED_FOR_TARGET
-#define HAVE_AS_COMPRESS_DEBUG 0
+#define HAVE_AS_COMPRESS_DEBUG 1
 #endif
 
 
